@@ -333,7 +333,7 @@ function init_subpages_navigation_plugin()
   
   if (!is_admin()) {
     if(SUBPAGE_NAVIGATION_SCRIPT)
-      wp_enqueue_script('subpages-navigation', plugins_url('/subpage-navigation/subpages-navigation.js'), array('jquery'));
+      wp_enqueue_script('subpages-navigation', plugins_url('/subpages-navigation/subpages-navigation.js'), array('jquery'));
     
     if(SUBPAGE_NAVIGATION_STYLE){
       if (file_exists(STYLESHEETPATH."/subpages-navigation.css") )
@@ -341,7 +341,7 @@ function init_subpages_navigation_plugin()
         wp_enqueue_style('subpages-navigation', get_bloginfo('stylesheet_directory').'/subpages-navigation.css');
 
       }else{
-        wp_enqueue_style('subpages-navigation', plugins_url('/subpage-navigation/subpage-navigation.css'));
+        wp_enqueue_style('subpages-navigation', plugins_url('/subpages-navigation/subpages-navigation.css'));
       }
     }
   }
@@ -352,7 +352,7 @@ function init_subpages_navigation_plugin()
 
 add_action("admin_print_scripts-widgets.php","subpages_navigation_plugin_admin");
 function subpages_navigation_plugin_admin(){
-  wp_enqueue_script('subpages-navigation-admin', plugins_url('/subpage-navigation/subpages-navigation-admin.js'),array('jquery'));
+  wp_enqueue_script('subpages-navigation-admin', plugins_url('/subpages-navigation/subpages-navigation-admin.js'),array('jquery'));
 
 }
 
