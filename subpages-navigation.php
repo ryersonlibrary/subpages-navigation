@@ -1,15 +1,12 @@
 <?php
 /**
  * Plugin Name: Subpages Navigation 
- * Plugin URI: http://olt.ubc.ca
- * Description: Create subpages navigation menu with sidebar widgets and shortcodes.
+ * Plugin URI: https://github.com/ryersonlibrary/subpages-navigation
+ * Description: Create subpages navigation menu with sidebar widgets and shortcodes. Legacy plugin support for the Ryerson University Library & Archives website.
+ * Author: Ryerson University Library & Archives
+ * Author URI: https://github.com/ryersonlibrary/
+ * GitHub Plugin URI: https://github.com/ryersonlibrary/subpages-navigation
  * Version: 1.1.1
- * Author: Enej Bajgoric / Godfrey Chan / Michael Ha / OLT 
- * Author URI: http://blogs.ubc.ca/
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  */
 
 //if(!defined("SUBPAGE_NAVIGATION_STYLE"))
