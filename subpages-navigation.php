@@ -49,7 +49,9 @@ class OLT_Subpages_Navigation_Widget extends WP_Widget {
     $control_ops = array( 'width' => 400, 'height' => 350, 'id_base' => 'olt-subpages-navigation-widget' );
 
     /* Create the widget. */
-    $this->WP_Widget( 'olt-subpages-navigation-widget', __('Subpages Navigation', 'olt_subpages_navigation'), $widget_ops, $control_ops );
+    // $this->WP_Widget( 'olt-subpages-navigation-widget', __('Subpages Navigation', 'olt_subpages_navigation'), $widget_ops, $control_ops );
+    // WP_Widget::__construct( string $id_base, string $name, array $widget_options = array(), array $control_options = array() )
+    parent::__construct( 'olt-subpages-navigation-widget', __('Subpages Navigation', 'olt_subpages_navigation'), $widget_ops, $control_ops );
   }
 
   /**
