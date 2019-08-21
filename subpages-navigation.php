@@ -6,7 +6,7 @@
  * Author: Ryerson University Library & Archives
  * Author URI: https://github.com/ryersonlibrary/
  * GitHub Plugin URI: https://github.com/ryersonlibrary/subpages-navigation
- * Version: 1.1.1
+ * Version: 1.1.2
  */
 
 //if(!defined("SUBPAGE_NAVIGATION_STYLE"))
