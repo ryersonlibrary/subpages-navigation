@@ -6,7 +6,7 @@
  * Author: Ryerson University Library & Archives
  * Author URI: https://github.com/ryersonlibrary/
  * GitHub Plugin URI: https://github.com/ryersonlibrary/subpages-navigation
- * Version: 1.1.2
+ * Version: 1.1.3
  */
 
 //if(!defined("SUBPAGE_NAVIGATION_STYLE"))
@@ -41,7 +41,7 @@ class OLT_Subpages_Navigation_Widget extends WP_Widget {
   /**
    * Widget setup.
    */
-  function OLT_Subpages_Navigation_Widget() {
+  function __construct() {
     /* Widget settings. */
     $widget_ops = array( 'classname' => 'widget_subpages_navigation', 'description' => __('A widget that creates a subpages navigation menu.', 'olt_subpages_navigation') );
 
