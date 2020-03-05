@@ -6,7 +6,7 @@
  * Author: Ryerson University Library & Archives
  * Author URI: https://github.com/ryersonlibrary/
  * GitHub Plugin URI: https://github.com/ryersonlibrary/subpages-navigation
- * Version: 1.1.3
+ * Version: 1.1.4
  */
 
 //if(!defined("SUBPAGE_NAVIGATION_STYLE"))
@@ -66,11 +66,11 @@ class OLT_Subpages_Navigation_Widget extends WP_Widget {
       extract( $args );
       extract( $instance);
       
-
+      $root_id = '';
       /* Find the root post */
-          if($root == 0): #all pages 
-          $root_id = "0";
-          $pages = get_pages("sort_column=menu_order");
+        if($root == 0): #all pages 
+        $root_id = "0";
+        $pages = get_pages("sort_column=menu_order");
 
         elseif($root == 1): # subpages of the top-level page
         $rootPost = $post;
@@ -371,7 +371,7 @@ class SubpagesNavigationPageList extends Walker {
 
   function start_el(&$output, $object, $depth = 0, $args = array(), $current_object_id = 0) {
     extract($args);
-
+    $lightbox = false;
     $title = esc_html($object->post_title);
     $link  = get_permalink($object->ID);
 
